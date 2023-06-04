@@ -1,0 +1,163 @@
+@font-face {
+    font-family: mywebfont;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf),
+        url(assets/fonts/static/HankenGrotesk-Bold.ttf),
+        url(assets/fonts/static/HankenGrotesk-ExtraBold.ttf),
+        url(assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mywebfont;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 740px;
+    display: flex;
+    box-shadow: 10px 20px 30px #F2F4FB;
+    border-radius: 30px;
+}
+
+.box_result{
+    background: #5C3DFA;
+    /* border-radius: 10%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 35px;
+    
+}
+
+.box {
+    width: 50%;
+    padding: 40px;
+}
+
+.box_result_title{
+    color: #D1C7FF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.box_result .result {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    background: linear-gradient( hsla(256, 72%, 46%, 1) 30%, hsla(241, 72%, 46%, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:40px 0;
+}
+
+.box_result .result h2{
+    font-size: 75px;
+    color:#fff;
+    line-height: 1.1;
+}
+
+.box_result .result p{
+    color: hsl(241, 100%, 75%);
+    font-size: 18px;
+
+}
+
+.box_result h1{
+    color: #fff;
+    line-height: 1;
+}
+
+.box_result-desc{
+    color: #D1C7FF;
+    text-align: center;
+    font-size: 18px;
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+.box_summary h3{
+    color: hsl(224, 30%, 27%);
+    font-size: 24px;
+}
+
+.summary_content{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.summary_item{
+    display: flex; 
+    padding: 15px;
+    font-size: 18px;  
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.reaction .summary_title{color:  hsl(0, 100%, 67%);}
+.memory .summary_title{color:  hsl(39, 100%, 56%);}
+.verbal .summary_title{color:  hsl(166, 100%, 37%);}
+.visual .summary_title{color:  hsl(234, 85%, 45%);}
+
+.reaction {
+    background: #FFF6F5;
+}
+.memory {
+    background: #FFFBF2;
+}
+.verbal {
+    background: #F2FBFA;
+}
+.visual {
+    background: #F3F3FD;
+}
+
+.summary_title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    font-weight: 500;
+}
+
+.summary_title img{margin-right: 10px;}
+
+.summary_number{
+    width: 50%;
+    color: #939394;
+    text-align: end;
+    font-weight: 700;
+}
+
+.summary_number span{color: #303B59;}
+
+.summary_btn{
+    display: block;
+    text-decoration: none;
+    background: hsl(224, 30%, 27%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: ease 1s;
+}
+
+.summary_btn:hover{
+    background: linear-gradient(to top, #3633C1, #674DD9);
+}
